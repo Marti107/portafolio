@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacto — Marti</title>
+        <link rel="stylesheet" href="estilosportafolio.css">
+    </head>
+    <body>
+        <nav>
+            <div class="contenedor">
+                <a href="index.html" class="logo">M.</a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="experiencia.html">Experiencia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="pagina-contenido">
+
+            <section class="seccion">
+                <div class="contenedor contacto-layout">
+
+                    <!-- COLUMNA IZQUIERDA -->
+                    <div class="contacto-info">
+                        <p class="seccion-etiqueta">Hablemos</p>
+                        <h2 class="seccion-titulo">Contacto</h2>
+                        <p class="sobre-texto">
+                            Si tenés alguna propuesta, pregunta o simplemente querés conectar, 
+                            mandame un mensaje y te respondo a la brevedad.
+                        </p>
+
+                        <div class="contacto-links">
+                            <a href="mailto:mmartiinaa28@gmail.com" class="contacto-link">
+                                <span class="contacto-link-icono">✉️</span>
+                                <div>
+                                    <span class="contacto-link-label">Email</span>
+                                    <span class="contacto-link-valor">mmartinafernandez9@gmail.com</span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/martina-fern%C3%A1ndez-91aa70213/" target="_blank" class="contacto-link">
+                                <span class="contacto-link-icono">💼</span>
+                                <div>
+                                    <span class="contacto-link-label">LinkedIn</span>
+                                    <span class="contacto-link-valor">Martina Fernandez</span>
+                                </div>
+                            </a>
+                            <a href="https://github.com/Marti107" target="_blank" class="contacto-link">
+                                <span class="contacto-link-icono">🐙</span>
+                                <div>
+                                    <span class="contacto-link-label">GitHub</span>
+                                    <span class="contacto-link-valor">Marti107</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- COLUMNA DERECHA: FORMULARIO -->
+                    <div class="contacto-form-wrapper">
+                        <form action="https://formspree.io/f/mzdnrjwz" method="POST" class="contacto-form" id="contacto-form">
+                            <div class="form-grupo">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿En qué puedo ayudarte?" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-primario btn-form">Enviar mensaje</button>
+                            <p class="form-exito" id="form-exito">¡Mensaje enviado! Te respondo pronto.</p>
+                        </form>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="pie">
+            <p>Derechos Reservados &copy; 2026 · Martina Fernandez</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

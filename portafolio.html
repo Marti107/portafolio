@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portafolio — Marti</title>
+        <link rel="stylesheet" href="estilosportafolio.css">
+    </head>
+    <body>
+        <nav>
+            <div class="contenedor">
+                <a href="index.html" class="logo">M.</a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="experiencia.html">Experiencia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="pagina-contenido">
+
+            <section class="seccion">
+                <div class="contenedor">
+                    <p class="seccion-etiqueta">Mis trabajos</p>
+                    <h2 class="seccion-titulo">Portafolio</h2>
+                    <p class="sobre-texto">
+                        Una selección de proyectos que combinan análisis funcional, 
+                        diseño de sistemas y modelado 3D.
+                    </p>
+
+                    <!-- FILTROS -->
+                    <div class="filtros">
+                        <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+                        <button class="filtro-btn" data-filtro="municipalidad">Municipalidad</button>
+                        <button class="filtro-btn" data-filtro="3d-herramientas">Herramientas 3D</button>
+                        <button class="filtro-btn" data-filtro="3d-otros">Diseño 3D</button>
+                    </div>
+
+                    <!-- GRILLA DE PROYECTOS -->
+                    <div class="proyectos-grid">
+
+                        <!-- MUNICIPALIDAD -->
+                        <div class="proyecto-card" data-categoria="municipalidad">
+                            <!-- CARD 1 -->
+                            <div class="proyecto-img proyecto-sin-img">
+                                <span class="proyecto-placeholder-icono">🗂️</span>
+                                <span class="proyecto-tag">Municipalidad</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Sistema de Stock — Ajuste Masivo</h3>
+                                <p>Prototipo interactivo del módulo de ajustes masivos via Excel para el sistema mi3F de la Municipalidad de Tres de Febrero.</p>
+                                <div class="badges">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">UX</span>
+                                    <span class="badge">Análisis funcional</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proyecto-card" data-categoria="municipalidad">
+                            <!-- CARD 2 -->
+                            <div class="proyecto-img proyecto-sin-img">
+                                <span class="proyecto-placeholder-icono">📦</span>
+                                <span class="proyecto-tag">Municipalidad</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Sistema de Stock — Detalle de Ingreso</h3>
+                                <p>Prototipo del módulo de edición de ingresos con modal de confirmación, simulación de roles y control de diferencias.</p>
+                                <div class="badges">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">UX</span>
+                                    <span class="badge">Análisis funcional</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proyecto-card" data-categoria="municipalidad">
+                            <!-- CARD 3 -->
+                            <div class="proyecto-img proyecto-sin-img">
+                                <span class="proyecto-placeholder-icono">📄</span>
+                                <span class="proyecto-tag">Municipalidad</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Gestor Documental Sincronizado</h3>
+                                <p>Prototipo de sincronización entre el Sistema de Expedientes y el Gestor Documental, con flujo completo de creación y firma de documentos.</p>
+                                <div class="badges">
+                                    <span class="badge">HTML</span>
+                                    <span class="badge">UX</span>
+                                    <span class="badge">Gestión documental</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HERRAMIENTAS 3D -->
+                        <div class="proyecto-card" data-categoria="3d-herramientas">
+                            <div class="proyecto-img">
+                                <img src="img/fondo-cajon.jpg" alt="Fondo de cajón">
+                                <span class="proyecto-tag">Herramientas 3D</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Fondo de cajón</h3>
+                                <p>Accesorio para organización de cajones de carpintería, diseñado a medida en Fusion 360.</p>
+                                <div class="badges">
+                                    <span class="badge">Fusion 360</span>
+                                    <span class="badge">Impresión 3D</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proyecto-card" data-categoria="3d-herramientas">
+                            <div class="proyecto-img">
+                                <img src="img/plantilla-gola.png" alt="Plantilla Gola">
+                                <span class="proyecto-tag">Herramientas 3D</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Plantilla Gola</h3>
+                                <p>Plantilla de referencia para carpintería con medidas grabadas, diseñada para marcar y verificar golas de distintos tamaños.</p>
+                                <div class="badges">
+                                    <span class="badge">Fusion 360</span>
+                                    <span class="badge">Impresión 3D</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proyecto-card" data-categoria="3d-herramientas">
+                            <div class="proyecto-img">
+                                <img src="img/uscribe-18mm.jpeg" alt="U-Scribe 18mm">
+                                <span class="proyecto-tag">Herramientas 3D</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>U-Scribe 18mm</h3>
+                                <p>Marcador de líneas para tableros de 18mm, diseñado e impreso con medidas grabadas para uso profesional en carpintería.</p>
+                                <div class="badges">
+                                    <span class="badge">Fusion 360</span>
+                                    <span class="badge">Impresión 3D</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- DISEÑO 3D OTROS -->
+                        <div class="proyecto-card" data-categoria="3d-otros">
+                            <div class="proyecto-img">
+                                <img src="img/regla-curva.jpeg" alt="Regla curva para costura">
+                                <span class="proyecto-tag">Diseño 3D</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Regla curva para costura</h3>
+                                <p>Herramienta de medición con curvas y escalas grabadas, diseñada para proyectos de costura y patronaje.</p>
+                                <div class="badges">
+                                    <span class="badge">Fusion 360</span>
+                                    <span class="badge">Impresión 3D</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proyecto-card" data-categoria="3d-otros">
+                            <div class="proyecto-img">
+                                <img src="img/mate-stranger-things.jpeg" alt="Mate Stranger Things">
+                                <span class="proyecto-tag">Diseño 3D</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Mate Stranger Things</h3>
+                                <p>Mate funcional con forma de televisor retro temático de Stranger Things, impreso en múltiples colores.</p>
+                                <div class="badges">
+                                    <span class="badge">Fusion 360</span>
+                                    <span class="badge">Impresión 3D</span>
+                                    <span class="badge">Multicolor</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="proyecto-card" data-categoria="3d-otros">
+                            <div class="proyecto-img">
+                                <img src="img/mate-hello-kitty01.jpeg" alt="Mate Hello Kitty">
+                                <span class="proyecto-tag">Diseño 3D</span>
+                            </div>
+                            <div class="proyecto-info">
+                                <h3>Mate Hello Kitty</h3>
+                                <p>Mate funcional con forma de Hello Kitty, impreso en múltiples colores y pintado a mano para lograr el acabado final.</p>
+                                <div class="badges">
+                                    <span class="badge">Fusion 360</span>
+                                    <span class="badge">Impresión 3D</span>
+                                    <span class="badge">Pintado a mano</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="pie">
+            <p>Derechos Reservados &copy; 2026 · Martina Fernandez</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
