@@ -853,3 +853,119 @@ nav ul li a:hover::after {
     font-size: 0.95rem;
 }
 
+/* ===== RESPONSIVE MOBILE ===== */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    nav ul {
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 0.75rem;
+    }
+
+    /* HERO */
+    .hero-contenido {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto {
+        max-width: 100%;
+    }
+
+    .hero-descripcion {
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        padding-bottom: 0;
+    }
+
+    .escena {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cara {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cara-frente  { transform: translateZ(75px); }
+    .cara-atras   { transform: rotateY(180deg) translateZ(75px); }
+    .cara-derecha { transform: rotateY(90deg) translateZ(75px); }
+    .cara-izquiera { transform: rotateY(-90deg) translateZ(75px); }
+    .cara-arriba  { transform: rotateX(90deg) translateZ(75px); }
+    .cara-abajo   { transform: rotateX(-90deg) translateZ(75px); }
+
+    /* SOBRE MÍ */
+    .datos-rapidos {
+        flex-direction: column;
+    }
+
+    .dato {
+        max-width: 100%;
+    }
+
+    .blandas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* EXPERIENCIA */
+    .exp-header-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* PORTAFOLIO */
+    .proyectos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filtros {
+        gap: 0.5rem;
+    }
+
+    .filtro-btn {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+    }
+
+    /* CONTACTO */
+    .contacto-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /* VOLUNTARIADO */
+    .vol-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* NAVBAR — oculta texto, muestra solo logo */
+    nav ul li a {
+        font-size: 0.7rem;
+        letter-spacing: 0;
+    }
+
+    nav ul {
+        gap: 0.8rem;
+    }
+
+    /* TÍTULOS */
+    .seccion-titulo {
+        font-size: 1.8rem;
+    }
+
+    /* CONTACTO LINKS */
+    .contacto-link-valor {
+        font-size: 0.8rem;
+    }
+}
+
