@@ -57,3 +57,36 @@ if (form) {
         }
     });
 }
+
+// Carruseles
+document.querySelectorAll('.carrusel').forEach(carrusel => {
+    const track = carrusel.querySelector('.carrusel-track');
+    const slides = carrusel.querySelectorAll('.carrusel-slide');
+    const puntos = carrusel.querySelectorAll('.carrusel-punto');
+    const btnPrev = carrusel.querySelector('.prev');
+    const btnNext = carrusel.querySelector('.next');
+    let indice = 0;
+
+    function irA(n) {
+        indice = (n + slides.length) % slides.length;
+        track.style.transform = `translateX(-${indice * 100}%)`;
+        puntos.forEach(p => p.classList.remove('activo'));
+        if (puntos[indice]) puntos[indice].classList.add('activo');
+    }
+
+    if (btnPrev) btnPrev.addEventListener('click', () => irA(indice - 1));
+    if (btnNext) btnNext.addEventListener('click', () => irA(indice + 1));
+
+    puntos.forEach((punto, i) => {
+        punto.addEventListener('click', () => irA(i));
+    });
+
+    // Ocultar flechas si hay un solo slide
+    if (slides.length <= 1) {
+        if (btnPrev) btnPrev.style.display = 'none';
+        if (btnNext) btnNext.style.display = 'none';
+    }
+});
+
+
+
