@@ -975,13 +975,13 @@ nav ul li a {
     width: 100%;
     aspect-ratio: 16 / 9;
     overflow: hidden;
-    background: var(--color-superficie); /* o el color que uses de fondo de card */
+    background: var(--color-superficie);
 }
 
 .carrusel-slide {
     min-width: 100%;
     height: 100%;
-    object-fit: contain;   /* muestra la foto completa, sin recortar */
+    object-fit: contain;
 }
 
 .carrusel-track {
